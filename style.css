@@ -1,0 +1,113 @@
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    margin: 0; 
+    background: #0F2027; 
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);    
+    background-image: url(./img/joshua-bartell-6vvIBTvL90A-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.notes{
+    padding: 3rem;
+    width: 400px;
+    height: 400px;
+}
+textarea{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    font-size: 20px;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    font-size: 20px;
+    background-color: gold;
+    
+}
+.header{
+    width: 100%;
+    background-color: black;
+    padding: 0.4rem;
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.header button{
+    background: none;
+    color: yellow;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}
+.addnotes{
+    margin: 1rem;
+    position: fixed;
+    top: 85%;
+    display: flex;
+    justify-content: flex-end;
+}
+.addnotes button{
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    box-shadow: 1px 1px 14px 8px #867b7f;
+    background: #9C27B0;
+    color: white;
+    cursor: pointer;
+}
+@media (max-width:786px) {
+    .addnotes button{
+        font-size: initial;
+
+    }
+    .container{
+        height: 40vh;
+    }
+    .container p {
+        top: 35% !important;
+        left: 1% !important;
+        font-size: 35px !important;
+    }
+    .notes{
+        width: 100%;
+    }
+}
+
+.container{
+    max-height: calc(100vh - 3em);
+    background-image: url(./img/photo-1505682634904-d7c8d95cdc50.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+.container p {
+    position: absolute;
+    top: 26%;
+    left: 20%;
+    font-size: 5rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+p span{
+    color: green;
+    
+}
